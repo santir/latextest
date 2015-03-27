@@ -1,0 +1,56 @@
+% Las imágenes ponerlas en la carpeta ./gfx
+
+\documentclass[a4paper]{my_class}
+
+\newcommand{\codigoMateria}{86.06}
+\newcommand{\nombreMateria}{Circuitos Electrónicos}
+\newcommand{\nroTP}{1}
+\newcommand{\descripcionTP}{Amplificadores Operacionales: Usos y limitaciones}
+\newcommand{\tituloTP}{Trabajo de Laboratorio N\grad \nroTP}
+\newcommand{\facultad}{Facultad de Ingeniería}
+\newcommand{\universidad}{Universidad de Buenos Aires}
+
+\newcommand{\cuatri}{1er Cuatrimestre de 2015}
+
+\usepackage{my_style}
+
+% ---------------------------------------------------------------
+% COMIENZO
+\begin{document}
+\nocite{*}
+% ---------------------------------------------------------------
+% TÍTULO Y PRESENTACIÓN
+\include{cover} 
+\thispagestyle{empty}
+\cleardoublepage
+
+\pagenumbering{Roman}
+
+% ABSTRACT
+%\include{S0}
+%\thispagestyle{empty}
+%\cleardoublepage
+
+% TABLA DE CONTENIDOS
+\tableofcontents 
+\cleardoublepage
+% ---------------------------------------------------------------
+% PARTE PRINCIPAL
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+\input{1intro}
+\clearpage
+\input{2ampli}
+\clearpage
+\input{3recti}
+\clearpage
+\input{4conclu}
+\cleardoublepage
+% --------------------------------------------------
+% BIBLIOGRAFÍA
+%\bibliography{biblio}{}
+%\bibliographystyle{plain}
+%\clearpage
+% --------------------------------------------------
+\end{document}

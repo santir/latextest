@@ -1,0 +1,30 @@
+%******************************************************
+%* Luciano Leonel Chamorro (FIUBA #95691)
+%******************************************************
+% Notas: Configuraciones del tipo de hoja - Delicado
+% -----------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{my_style}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                C U S T O M I S E   B E L O W                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% PAQUETE PARA EDITAR ENCABEZADO Y PIE DE PAG
+\RequirePackage[a4paper, twoside, left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,bindingoffset=.5cm]{geometry}
+\setlength{\headheight}{15pt}
+
+\lhead[\codigoMateria]{}
+\chead{}
+\rhead[]{\tituloTP}%v\projectversion.\volumeversion}
+
+\lfoot[\thepage]{}
+\cfoot{}
+\rfoot[]{\fancyplain{}{\thepage}}
+
+
+%EDICION DEL IDENTIFICADOR DE LOS OBJETOS
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
