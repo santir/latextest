@@ -17,8 +17,7 @@
 %                        P A C K A G E S                        %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\RequirePackage[pdftex,
-	unicode=true,
+\RequirePackage[unicode=true,
 	breaklinks=true,
 	colorlinks=true,
 	linkcolor=black,
